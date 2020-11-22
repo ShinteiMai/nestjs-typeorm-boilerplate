@@ -8,6 +8,7 @@ import {
   Param,
   Post,
   Put,
+  UseGuards,
   UseInterceptors,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiResponse, ApiTags } from '@nestjs/swagger';
@@ -15,6 +16,7 @@ import { messages } from 'src/common/messages';
 import { CreateUserDto, UpdateUserDto } from './dto';
 import { User } from './user.entity';
 import { UserService } from './user.service';
+import { AuthGuard } from '@nestjs/passport';
 
 @ApiTags('users')
 @ApiBearerAuth()
@@ -32,6 +34,7 @@ export class UserController {
     type: User,
     description: messages.response.success,
   })
+  @UseGuards(AuthGuard())
   async findAll(): Promise<User[]> {
     return await this.userService.findAll();
   }
@@ -45,6 +48,7 @@ export class UserController {
     type: User,
     description: messages.response.success,
   })
+  @UseGuards(AuthGuard())
   async findOne(@Param('id') id: string): Promise<User> {
     return await this.userService.findOneById(id);
   }
@@ -58,6 +62,7 @@ export class UserController {
     type: User,
     description: messages.response.success,
   })
+  @UseGuards(AuthGuard())
   async create(@Body() data: CreateUserDto): Promise<User> {
     return await this.userService.create(data);
   }
@@ -72,6 +77,7 @@ export class UserController {
     type: User,
     description: messages.response.success,
   })
+  @UseGuards(AuthGuard())
   async update(
     @Param('id') id: string,
     @Body() data: UpdateUserDto,
@@ -88,6 +94,7 @@ export class UserController {
     type: User,
     description: messages.response.success,
   })
+  @UseGuards(AuthGuard())
   async delete(@Param('id') id: string) {
     return await this.userService.delete(id);
   }

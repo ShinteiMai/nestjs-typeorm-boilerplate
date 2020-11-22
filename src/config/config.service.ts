@@ -51,6 +51,14 @@ export class ConfigService {
     return Number(this.env.APP_PORT);
   }
 
+  get jwtSecret(): string {
+    return this.env.JWT_SECRET;
+  }
+
+  get jwtExpiresIn(): number {
+    return Number(this.env.JWT_EXPIRES_IN);
+  }
+
   get databaseName(): string {
     return this.env.DB_NAME;
   }
