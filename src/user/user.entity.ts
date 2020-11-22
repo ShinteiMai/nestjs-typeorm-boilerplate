@@ -17,6 +17,10 @@ export class User {
   id: string;
 
   @ApiProperty()
+  @Column({ nullable: true })
+  googleId: string;
+
+  @ApiProperty()
   @Column()
   firstName: string;
 
@@ -29,7 +33,7 @@ export class User {
   email: string;
 
   @Exclude()
-  @Column()
+  @Column({ nullable: true })
   password: string;
 
   @ApiProperty()

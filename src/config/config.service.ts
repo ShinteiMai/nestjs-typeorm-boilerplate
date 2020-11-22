@@ -35,6 +35,8 @@ export class ConfigService {
       JWT_SECRET: string().required(),
       JWT_EXPIRES_IN: number().default(30 * 24 * 60 * 60),
       APP_PORT: number().default(8080),
+      GOOGLE_CLIENT_ID: string().required(),
+      GOOGLE_CLIENT_SECRET: string().required(),
     });
 
     try {
@@ -47,6 +49,40 @@ export class ConfigService {
     }
   }
 
+  get appDomain(): string {
+    let domain: string;
+    switch (process.env.NODE_ENV) {
+      case 'development':
+        domain = 'http://localhost:8080';
+        break;
+      case 'production':
+        domain = 'https://stronkapp.com';
+        break;
+      default:
+        domain = 'http://stronkapp.com';
+        break;
+    }
+
+    return domain;
+  }
+
+  get webDomain(): string {
+    let domain: string;
+    switch (process.env.NODE_ENV) {
+      case 'development':
+        domain = 'http://localhost:3030';
+        break;
+      case 'production':
+        domain = 'https://fabelio.stevenhansel.com';
+        break;
+      default:
+        domain = 'http://fabelio.stevenhansel.com';
+        break;
+    }
+
+    return domain;
+  }
+
   get appPort(): number {
     return Number(this.env.APP_PORT);
   }
@@ -57,6 +93,14 @@ export class ConfigService {
 
   get jwtExpiresIn(): number {
     return Number(this.env.JWT_EXPIRES_IN);
+  }
+
+  get googleClientId(): string {
+    return this.env.GOOGLE_CLIENT_ID;
+  }
+
+  get googleClientSecret(): string {
+    return this.env.GOOGLE_CLIENT_SECRET;
   }
 
   get databaseName(): string {

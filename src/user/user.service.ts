@@ -37,6 +37,17 @@ export class UserService {
     return await this.userRepository.findOne({ email });
   }
 
+  async findOneByGoogleId(googleId: string): Promise<User> {
+    let user: User;
+    try {
+      user = await this.userRepository.findOne({ googleId });
+    } catch (err) {
+      throw new Error(err);
+    }
+
+    return user;
+  }
+
   async create(data: CreateUserDto): Promise<User> {
     if (data.email && (await this.findOneByEmail(data.email))) {
       throw new BadRequestException(
@@ -47,7 +58,12 @@ export class UserService {
     user.firstName = data.firstName;
     user.lastName = data.lastName;
     user.email = data.email;
-    user.password = await argon2.hash(data.password);
+    if (data.password) {
+      user.password = await argon2.hash(data.password);
+    }
+    if (data.googleId) {
+      user.googleId = data.googleId;
+    }
 
     try {
       return await this.userRepository.save(user);
