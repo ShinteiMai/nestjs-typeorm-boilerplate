@@ -1,8 +1,18 @@
-import { Body, Controller, Get, HttpStatus, Param, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  HttpStatus,
+  Param,
+  Post,
+  Request,
+  UseGuards,
+} from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
 import { ApiBearerAuth, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { messages } from 'src/common/messages';
 import { CreateProductDto } from './dto';
-import { Product } from './product.entity';
+import { Product } from './entities/product.entity';
 import { ProductService } from './product.service';
 
 @ApiTags('products')
@@ -19,6 +29,18 @@ export class ProductController {
   })
   async findAll(): Promise<Product[]> {
     return await this.productService.findAll();
+  }
+
+  @Get('/user')
+  @UseGuards(AuthGuard())
+  @ApiResponse({
+    status: HttpStatus.OK,
+    type: Product,
+    description: messages.response.success,
+  })
+  async findFiltered(@Request() req): Promise<Product[]> {
+    const callerUserId = req.user.id;
+    return await this.productService.findAllFiltered(callerUserId);
   }
 
   @Get(':id')
@@ -39,5 +61,29 @@ export class ProductController {
   })
   async create(@Body() data: CreateProductDto): Promise<Product> {
     return await this.productService.create(data);
+  }
+
+  @Get(':id/view')
+  @UseGuards(AuthGuard())
+  @ApiResponse({
+    status: HttpStatus.OK,
+    type: Product,
+    description: messages.response.success,
+  })
+  async viewProduct(@Request() req, @Param('id') id) {
+    const callerUserId = req.user.id;
+    return await this.productService.viewProduct(callerUserId, id);
+  }
+
+  @Get(':id/unview')
+  @UseGuards(AuthGuard())
+  @ApiResponse({
+    status: HttpStatus.OK,
+    type: Product,
+    description: messages.response.success,
+  })
+  async unviewProduct(@Request() req, @Param('id') id) {
+    const callerUserId = req.user.id;
+    return await this.productService.unviewProduct(callerUserId, id);
   }
 }

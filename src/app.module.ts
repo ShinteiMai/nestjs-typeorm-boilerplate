@@ -7,11 +7,12 @@ import { Color } from './colors/color.entity';
 import { ColorModule } from './colors/color.module';
 import { ConfigModule } from './config/config.module';
 import { ConfigService } from './config/config.service';
-import { Product } from './product/product.entity';
+import { Product } from './product/entities/product.entity';
 import { ProductModule } from './product/product.module';
-import { ProductImage } from './product/productImage.entity';
+import { ProductImage } from './product/entities/productImage.entity';
 import { User } from './user/user.entity';
 import { UserModule } from './user/user.module';
+import { ProductViews } from './product/entities/productViews.entity';
 
 @Module({
   imports: [
@@ -24,7 +25,7 @@ import { UserModule } from './user/user.module';
         username: configService.databaseUsername,
         password: configService.databasePassword,
         database: configService.databaseName,
-        entities: [User, Color, Product, ProductImage],
+        entities: [User, Color, Product, ProductImage, ProductViews],
         synchronize: true,
         logging: true,
       }),

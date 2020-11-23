@@ -7,6 +7,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { ProductImage } from './productImage.entity';
+import { ProductViews } from './productViews.entity';
 
 @Entity()
 export class Product {
@@ -33,6 +34,13 @@ export class Product {
   )
   @JoinColumn()
   productImages: ProductImage[];
+
+  @ApiProperty()
+  @OneToMany(
+    () => ProductViews,
+    productViews => productViews.product,
+  )
+  views: ProductViews[];
 
   /** Dimensions of the product */
   @ApiProperty()

@@ -2,12 +2,14 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  OneToMany,
   PrimaryGeneratedColumn,
   Unique,
   UpdateDateColumn,
 } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { Exclude } from 'class-transformer';
+import { ProductViews } from 'src/product/entities/productViews.entity';
 
 @Entity()
 @Unique(['email'])
@@ -35,6 +37,13 @@ export class User {
   @Exclude()
   @Column({ nullable: true })
   password: string;
+
+  @ApiProperty()
+  @OneToMany(
+    () => ProductViews,
+    productViews => productViews.user,
+  )
+  viewedProducts: ProductViews[];
 
   @ApiProperty()
   @CreateDateColumn()
