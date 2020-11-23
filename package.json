@@ -21,7 +21,10 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "docker:build": "docker build -t nestjs-typeorm-boilerplate:v1.0 .",
     "docker:run": "docker run -it -p 8080 nestjs-typeorm-boilerplate:v1.0",
-    "deploy": "docker-compose --env-file production.env up --build -d"
+    "deploy": "docker-compose --env-file production.env up --build -d",
+    "cron:register": "NODE_ENV=development ts-node cron/register.ts",
+    "cron:colors": "NODE_ENV=development ts-node cron/colors.ts",
+    "cron:products": "NODE_ENV=development ts-node cron/products.ts"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.0",
@@ -33,6 +36,7 @@
     "@nestjs/typeorm": "^7.1.5",
     "@types/passport-google-oauth20": "^2.0.4",
     "argon2": "^0.27.0",
+    "axios": "^0.21.0",
     "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
     "dotenv": "^8.2.0",

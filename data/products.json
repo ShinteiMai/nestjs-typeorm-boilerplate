@@ -1,0 +1,219 @@
+{
+  "products": [
+    {
+      "name": "Sofa 2 Dudukan Vienna",
+      "material": "Solid Wood",
+      "price": 3899000,
+      "productImages": [
+        {
+          "color": "Custard Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/w/i/wina_2_seater_sofa__custard__1_1.jpg"
+        },
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__graphite__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        },
+        {
+          "color": "Ruby Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 162,
+      "height": 95,
+      "depth": 86
+    },
+    {
+      "name": "Sofa Tempat Tidur Mochi",
+      "material": "Solid Wood",
+      "price": 3500000,
+      "productImages": [
+        {
+          "color": "Custard Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/r/2/r2710.jpg"
+        },
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__graphite__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        },
+        {
+          "color": "Ruby Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 160,
+      "height": 95,
+      "depth": 90
+    },
+    {
+      "name": "Sofa 2 Dudukan Zelado",
+      "material": "Hollow Steel",
+      "price": 4299000,
+      "productImages": [
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/z/e/zelado-2-seater-sofa---custard-01.jpg"
+        },
+        {
+          "color": "Teal Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 162,
+      "height": 95,
+      "depth": 86
+    },
+    {
+      "name": "Sofa 2 Dudukan Zelado",
+      "material": "Hollow Steel",
+      "price": 4299000,
+      "productImages": [
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/z/e/zelado-2-seater-sofa---custard-01.jpg"
+        },
+        {
+          "color": "Teal Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 162,
+      "height": 95,
+      "depth": 86
+    },
+    {
+      "name": "Sofa 2 Dudukan Toril",
+      "material": "Solid Wood",
+      "price": 2899000,
+      "productImages": [
+        {
+          "color": "Blue Jay",
+          "imageUrl": "https://fabelio.com/media/catalog/product/t/o/Toril_2_Seater_Sofa_(Paradise)_1.jpg"
+        },
+        {
+          "color": "Ruby Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 160,
+      "height": 95,
+      "depth": 90
+    },
+    {
+      "name": "Sofa Tempat Tidur Deacon",
+      "material": "Hollow Steel",
+      "price": 3299000,
+      "productImages": [
+        {
+          "color": "Custard Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/d/e/deacon_white_1_1_1.jpg"
+        },
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 150,
+      "height": 90,
+      "depth": 80
+    },
+    {
+      "name": "Sofa Java",
+      "material": "Solid Wood",
+      "price": 3869100,
+      "productImages": [
+        {
+          "color": "Custard Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/t/a/Taby_Java_2_Seater_Living_Set_(Sugar)_1.jpg"
+        },
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 142,
+      "height": 90,
+      "depth": 80
+    },
+    {
+      "name": "Sofa 1 Dudukan Hughes",
+      "material": "Solid Wood",
+      "price": 3899000,
+      "productImages": [
+        {
+          "color": "Custard Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/h/u/Hughes_Armchair_(Wood)_0.jpg"
+        },
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__graphite__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        },
+        {
+          "color": "Ruby Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 90,
+      "height": 82,
+      "depth": 58
+    },
+    {
+      "name": "Sofa 1 Dudukan Taby",
+      "material": "Solid Wood",
+      "price": 2399000,
+      "colors": ["Brown Vienna", "Ruby Vienna"],
+      "productImages": [
+        {
+          "color": "Brown Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/t/a/Taby_Armchair_(Jezebel)_1.jpg"
+        },
+        {
+          "color": "Ruby Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 90,
+      "height": 82,
+      "depth": 58
+    },
+    {
+      "name": "Sofa 1 Dudukan Zoey",
+      "material": "Hollow Steel",
+      "price": 2399000,
+      "productImages": [
+        {
+          "color": "Brown Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/k/u/Kursi_Zoey_Armchair_(Brown)_0.jpg"
+        },
+        {
+          "color": "Ruby Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 90,
+      "height": 82,
+      "depth": 58
+    },
+    {
+      "name": "Sofa 1 Dudukan Vienna",
+      "material": "Solid Wood",
+      "price": 2199000,
+      "productImages": [
+        {
+          "color": "Custard Vienna",
+          "imageUrl": "https://fabelio.com/media/catalog/product/w/i/wina_armchair__graphite__1_1.jpg"
+        },
+        {
+          "color": "Graphite Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__graphite__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        },
+        {
+          "color": "Ruby Vienna",
+          "imageUrl": "https://cdn-m2.fabelio.com/catalog/product/w/i/wina_2_seater_sofa__ruby__1_1.jpg?auto=format&w=100%25&h=640&q=100&ixlib=react-9.0.3"
+        }
+      ],
+      "width": 90,
+      "height": 82,
+      "depth": 58
+    }
+  ]
+}

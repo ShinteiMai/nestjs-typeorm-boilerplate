@@ -1,0 +1,28 @@
+{
+  "colors": [
+    {
+      "name": "Custard Vienna",
+      "hex": "#B3A79B"
+    },
+    {
+      "name": "Graphite Vienna",
+      "hex": "#343437"
+    },
+    {
+      "name": "Ruby Vienna",
+      "hex": "#4B0A0F"
+    },
+    {
+      "name": "Teal Vienna",
+      "hex": "#58897B"
+    },
+    {
+      "name": "Blue Jay",
+      "hex": "#325675"
+    },
+    {
+      "name": "Brown Vienna",
+      "hex": "#69473C"
+    }
+  ]
+}

@@ -18,7 +18,6 @@ export class CreateUserDto {
   @Length(6)
   readonly password: string;
 
-  @ApiProperty()
   @Length(1)
   @IsOptional()
   readonly googleId: string;

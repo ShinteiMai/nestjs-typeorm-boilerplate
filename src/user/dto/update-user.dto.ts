@@ -20,11 +20,14 @@ export class UpdateUserDto {
   @ApiProperty()
   @IsOptional()
   @Length(6)
-  readonly oldPassword;
-  string;
+  readonly oldPassword: string;
 
   @ApiProperty({ minLength: 6 })
   @IsOptional()
   @Length(6)
   readonly newPassword: string;
+
+  @Length(1)
+  @IsOptional()
+  readonly googleId: string;
 }
